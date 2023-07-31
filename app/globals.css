@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input::placeholder {
+    color: #CD1818; /* Replace with your preferred color */
+    font-size: 20px; /* Replace with your preferred font size */
+  }
+  
