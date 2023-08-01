@@ -13,7 +13,7 @@ function navbar() {
       
 
   return (
-    <nav className="bg-white-800 p-8 shadow-lg">
+    <nav className="bg-white-800 p-7 shadow-lg ">
     <div className="container mx-auto flex justify-between items-center">
       {/* Logo */}
       <div className="text-[#CD1818] text-3xl font-serif font-semibold">
@@ -25,7 +25,7 @@ function navbar() {
       <div className="flex items-center">
         <input
           type="text"
-          className="px-8 py-3 rounded-[18px] w-[30rem] mr-2 border-2 border-[#CD1818] focus:outline-none "
+          className="px-8 py-3 rounded-[18px] w-[30rem] mr-2 border-4 border-[#CD1818] focus:outline-none "
           style={{
             backgroundImage: "url(../Search.png)",
             backgroundPosition: "95% 50%",
