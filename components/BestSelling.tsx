@@ -1,3 +1,7 @@
+import Card from "@/components/Card";
+import { cardsData } from "./Data";
+import ViewMore from "./ViewMore";
+
 function BestSelling() {
   return (
     <div>
@@ -24,6 +28,22 @@ function BestSelling() {
           their exceptional taste and quality. These treats are sure to satisfy
           even the most discerning palates.
         </p>
+      </div>
+      <div className="justify-center items-center ">
+        <div className="flex flex-wrap gap-8 mx-auto justify-center ">
+          {cardsData.map((card, index) => (
+            <Card
+              key={index}
+              title={card.title}
+              price={card.price}
+              imageSrc={card.imageSrc}
+              altText={card.altText}
+            />
+          ))}
+        </div>
+        <div className="flex justify-end m-8 mr-28">
+          <ViewMore />
+        </div>
       </div>
     </div>
   );

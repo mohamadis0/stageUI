@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Discover from "@/components/Discover";
 import BestSelling from "@/components/BestSelling";
-import Card from "@/components/Card";
+import Categories from "@/components/Categories";
 
 function page() {
   return (
@@ -9,7 +9,7 @@ function page() {
    <Hero/>
    <Discover/>
    <BestSelling/>
-   <Card/>
+   <Categories/>
    </div>
   );
 }

@@ -1,5 +1,6 @@
 'use client';
 import {useState} from 'react';
+import Link from 'next/link';
 
 
 function navbar() {
@@ -23,7 +24,7 @@ function navbar() {
 
       {/* Search Bar */}
       <div className="flex items-center">
-        <input
+        <input id='input1'
           type="text"
           className="px-8 py-3 rounded-[18px] w-[30rem] mr-2 border-4 border-[#CD1818] focus:outline-none "
           style={{
@@ -40,26 +41,26 @@ function navbar() {
 
       {/* Navigation Links */}
       <div className="text-black font-serif text-xl">
-          <a
-            href="#"
+          <Link
+            href="/home"
             className={`mx-6 ${
               activeLink === 'home' ? 'text-[#CD1818] underline underline-offset-4' : ''
             }`}
             onClick={() => handleLinkClick('home')}
           >
             Home
-          </a>
+          </Link>
         
-          <a
-            href="#"
+          <Link
+            href="/login"
             className={`mx-6 ${
               activeLink === 'login' ? 'text-[#CD1818] underline underline-offset-4' : ''
             }`}
             onClick={() => handleLinkClick('login')}
           >
             Login
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className={`mx-6 ${
               activeLink === 'us' ? 'text-[#CD1818] underline underline-offset-4' : ''
@@ -67,8 +68,8 @@ function navbar() {
             onClick={() => handleLinkClick('us')}
           >
           Contact Us
-        </a>
-        <a
+        </Link>
+        <Link
             href="#"
             className={`mx-6 ${
               activeLink === 'our' ? 'text-[#CD1818] underline underline-offset-4' : ''
@@ -76,8 +77,8 @@ function navbar() {
             onClick={() => handleLinkClick('our')}
           >
           Our Bakery
-        </a>
-        <a
+        </Link>
+        <Link
             href="#"
             className={`mx-6 ${
               activeLink === 'cart' ? 'text-[#CD1818] underline underline-offset-4' : ''
@@ -85,7 +86,7 @@ function navbar() {
             onClick={() => handleLinkClick('cart')}
           >
           Cart
-        </a>
+        </Link>
       </div>
     </div>
   </nav>

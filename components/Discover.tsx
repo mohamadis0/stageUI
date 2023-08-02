@@ -1,6 +1,6 @@
 import "/styles/font.css";
 import Image from "next/image";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import ViewMore from "./ViewMore";
 
 function Discover() {
   return (
@@ -19,18 +19,7 @@ function Discover() {
           </p>
         </div>
         <div className="flex mt-16 mr-8 ">
-          <div className="flex  items-center ">
-            <button
-              style={{
-                fontFamily: "spectral",
-              }}
-            >
-              VIEW MORE
-            </button>
-            <div className="ms-1">
-              <AiOutlineArrowRight />
-            </div>
-          </div>
+            <ViewMore/>
         </div>
       </div>
       <div className="flex space-x-24 mx-32 mt-8">
