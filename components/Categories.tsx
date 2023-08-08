@@ -1,42 +1,34 @@
 import "/styles/font.css";
 import ViewMore from "./ViewMore";
 import MiniCard from "./MiniCard";
-import { cardsData1 } from "./Data1";
+import { cardsData1 } from "./data/Data1";
 
 function Categories() {
   return (
     <div>
-      <div className="my-40  bg-[#ECECEC]/25 h-[680px]">
-        <div className="mx-28">
+      <div className="bg-[#ECECEC]/25 lg:h-[680px]">
+        <div className="mx-5 lg:mx-28">
           <div className="pt-12 flex justify-center items-center">
-            <table className="w-full h-[72px]">
+            <table className="w-full h-auto sm:h-12 md:h-16 lg:h-20">
               <tbody>
                 <tr>
-                  <td className="table0">Croissants & Pastries</td>
-                  <td className="table0">Cookies & Brownies</td>
-                  <td className="table0">Cakes & Cupcakes</td>
-                  <td className="table0">Breads & Rolls</td>
-                  <td className="table0">Gluten-Free Delights</td>
+                  <td className="border-2 border-[#4E3636] font-['spectral'] font-semibold text-center text-[#4E3636] bg-white hover:text-white hover:bg-[#4E3636] text-xs sm:text-sm md:text-lg lg:text-xl">Croissants & Pastries</td>
+                  <td className="border-2 border-[#4E3636] font-['spectral'] font-semibold text-center text-[#4E3636] bg-white hover:text-white hover:bg-[#4E3636] text-xs sm:text-sm md:text-lg lg:text-xl">Cookies & Brownies</td>
+                  <td className="border-2 border-[#4E3636] font-['spectral'] font-semibold text-center text-[#4E3636] bg-white hover:text-white hover:bg-[#4E3636] text-xs sm:text-sm md:text-lg lg:text-xl">Cakes & Cupcakes</td>
+                  <td className="border-2 border-[#4E3636] font-['spectral'] font-semibold text-center text-[#4E3636] bg-white hover:text-white hover:bg-[#4E3636] text-xs sm:text-sm md:text-lg lg:text-xl">Breads & Rolls</td>
+                  <td className="border-2 border-[#4E3636] font-['spectral'] font-semibold text-center text-[#4E3636] bg-white hover:text-white hover:bg-[#4E3636] text-xs sm:text-sm md:text-lg lg:text-xl">Gluten-Free Delights</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div className="flex space-between gap-5 my-10">
-            <p className="font-['spectral'] text-3xl font-black">
+            <p className="font-['spectral'] text-xs sm:text-xl md:text-2xl lg:text-3xl font-black">
               Croissants & Pastries
             </p>
-            <div className="mt-4">
-              <svg
-                width="810"
-                height="4"
-                viewBox="0 0 804 1"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line y1="0.5" x2="804" y2="0.5" stroke="#4E3636" />
-              </svg>
+            <div className="mt-4 h-0.5 w-full border border-[#4E3636] bg-[#4E3636]">
+              
             </div>
-            <div className="ml-5 mt-1">
+            <div className="sm:ml-2 lg:ml-5 mt-1">
               <ViewMore />
             </div>
           </div>
